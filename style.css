@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS";
+}
+
+/* Generic CSS */
+
+.flex {
+    display: flex;
+}
+
+.marginL {
+    margin-left: 20px;
+}
+.marginL2 {
+    margin-left: 50px;
+}
+.marginT{
+    margin-top: 20px;
+}
+
+.width {
+    width: 250px;
+}
+
+.width2{
+    width: 700px;
+}
+
+.padding{
+    padding: 20px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-even {
+    justify-content: space-evenly;
+}
+
+.align {
+    align-items: center;
+}
+
+.alignC {
+    align-content: center;
+}
+
+.boxes {
+    border-radius: 30px;
+    background-color: white;
+}
+
+.borderT {
+    border-top: 2px solid black;
+}
+/* Header */
+
+header ul{
+    list-style: none;
+}
+
+/* Nav Bar */
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+.icons {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav img {
+    height: 20px;
+
+}
+
+nav h1 {
+    background-color:rgb(206,43,39);
+    color: white;
+    padding: 4px;
+}
+
+/* Main Content */
+main {
+    background-color: lightgrey;
+}
+/* box 2 button */
+#lButton{
+    background-color: blue;
+    color: white;
+    box-shadow: 2px 2px 2px 0 black;
+}
+#rButton{
+    background-color: white;
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+
+/* box 3 left side */
+
+.never{
+    padding: 20px;
+}
+
+.never button {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:rgb(255,229,152);
+    box-shadow: 2px 2px 2px 0 black;
+}
+
+span {
+    color: red;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Web Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Live Scores -->
+    <header class="flex justify-even">
+        <h1>Live Scores</h1>
+        <ul>
+            <li>SJC Ninjas - 314</li>
+            <li>NS Pirates - 159</li>
+        </ul>
+        <ul>
+            <li>CHI Samurai - 0</li>
+            <li>TUL Wizards - 0</li>
+        </ul>
+        <ul>
+            <li>BOS Hackers - 13</li>
+            <li>TYO Youkai - 37</li>
+        </ul>
+        <ul>
+            <li>BOI Knights - 5</li>
+            <li>SEA Sea Lions - 11</li>
+        </ul>
+    </header>
+<!-- Nav Bar -->
+    <nav class="flex justify-even align">
+        <h1>DSNN</h1>
+        <h3>Football</h3>
+        <h3>Basketball</h3>
+        <h3>Baseball</h3>
+        <h3>Soccer</h3>
+        <h3>More...</h3>
+        <div class="icons alignC">
+            <img src="search-light.png" alt="Search icon">
+            <img src="hamburger-light.png" alt="Menu icon">
+            <img src="user-circle-light.png" alt="User icon">
+        </div>
+    </nav>
+<!-- Main Content -->
+    <main class="flex padding justify-center">
+        <div class="leftSide marginL2 width">
+<!-- Left side -->
+            <!-- Box1 "Stories" -->
+            <div class="stories boxes padding">
+                <h1>Top Stories</h1>
+                <p class="borderT">Ninjas up in 5th Best sports cities Choi joins Hall of Fame Tournament underway Samurai at Wizards...</p>
+            </div>
+            <!-- Box2 "Customize" -->
+            <div class="marginT customize boxes padding">
+                <p>Customize your DSNN</p>
+                <button id="lButton">Sign In</button>
+                <button id="rButton">Sign Up</button>
+            </div>
+            <!-- Box3 "Never Miss" -->
+            <div id="neverBox" class="marginT never boxes">
+                <p>Never miss a play</p>
+                <button onclick="hide()">Subscribe</button>
+            </div>
+        </div>
+<!-- RightSide -->
+        <div class="rightSide boxes marginL padding width2">
+            <div class="scores">
+                <!-- Top -->
+                <div class="scoresT flex justify-center">
+                    <ul>
+                        <li><h2><span>Live</span></h2></li>
+                    </ul>
+                    <h2 class=" marginL">Ninjas leading Pirates</h2>
+                </div>
+                <!-- Middle -->
+                <div class="scoresInfo flex">
+                    <div class="leftScore">
+                        <img src="sjc-ninjas.png" alt="Ninja Team Logo">
+                        <h3>San Jose</h3>
+                        <h2>Ninjas</h2>
+                        <h4>(10 W - 3 L)</h4>
+                        <h1 id="nScore" onclick="addN()">314</h1>
+                    </div>
+                    <div class="middleScore justify-center">
+                        <h2>VS</h2>
+                        <p>0:13 remaining</p>
+                        <h4>5th Period</h4>
+                    </div>
+                    <div class="rightScore justify-center">
+                        <img src="ns-pirates.png" alt="Pirates Team Logo">
+                        <h3>Nova Scotia</h3>
+                        <h2>Pirates</h2>
+                        <h4>(12 W - 2 L)</h4>
+                        <h1 id="pScore" onclick="add()">159</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom -->
+            <p class="borderT">A conservative match between the two top-performing sides in the Central League Division with a number 1 seed at stake...<a href="">get_live_updates</a></p>    
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
